@@ -1,0 +1,35 @@
+{
+  "name": "node-gc",
+  "version": "0.1",
+  "main": "./index",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "description": "Node module to get events from the V8 GC.",
+  "author": {
+    "name": "Matthieu Riou",
+    "email": "matthieu@offthelip.org"
+  },
+  "homepage": "http://github.com/mriou/node-gc",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:schamane/node-gc.git"
+  },
+  "licenses": [
+    {
+      "type": "Simplified BSD License",
+      "url": "http://en.wikipedia.org/wiki/BSD_licenses"
+    }
+  ],
+  "tags": [
+    "syslog",
+    "system",
+    "log",
+    "logging"
+  ],
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true
+}
+
