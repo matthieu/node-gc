@@ -13,7 +13,7 @@
   "homepage": "http://github.com/mriou/node-gc",
   "repository": {
     "type": "git",
-    "url": "git@github.com:schamane/node-gc.git"
+    "url": "git@github.com:mriou/node-gc.git"
   },
   "licenses": [
     {
