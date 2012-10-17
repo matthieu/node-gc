@@ -92,7 +92,6 @@ Handle<Value> RunCallback(const Arguments& args) {
 
   nodegc::baton = *baton;
 
-  std::cout << "set cb\n";
   V8::AddGCPrologueCallback(GCPrologueCb, kGCTypeAll);
   V8::AddGCEpilogueCallback(GCEpilogueCb, kGCTypeAll);
 

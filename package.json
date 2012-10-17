@@ -1,6 +1,6 @@
 {
   "name": "node-gc",
-  "version": "0.1",
+  "version": "0.1.0",
   "main": "./index",
   "engines": {
     "node": ">=0.8.0"
@@ -17,19 +17,14 @@
   },
   "licenses": [
     {
-      "type": "Simplified BSD License",
-      "url": "http://en.wikipedia.org/wiki/BSD_licenses"
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   ],
-  "tags": [
-    "syslog",
-    "system",
-    "log",
-    "logging"
-  ],
-  "scripts": {
-    "install": "node-gyp rebuild"
-  },
-  "gypfile": true
+  "tags": ["v8", "extension", "gc", "garbage collector"],
+  "devDependencies" : {
+    "mocha" : "1.0.0",
+    "should" : "0.6.3"
+  }
 }
 
