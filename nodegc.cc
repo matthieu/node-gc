@@ -74,7 +74,7 @@ void GCPrologueCb(v8::GCType type, v8::GCCallbackFlags flags)
 
 void GCEpilogueCb(v8::GCType type, v8::GCCallbackFlags flags)
 {
-  uv_queue_work(uv_default_loop(), &nodegc::baton.request, AsyncWork, AsyncAfter);
+  uv_queue_work(uv_default_loop(), &nodegc::baton.request, AsyncWork, (uv_after_work_cb)AsyncAfter);
 }
 
 Handle<Value> RunCallback(const Arguments& args) {
